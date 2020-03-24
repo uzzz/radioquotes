@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+<section id=content>
+  <ul class=posts_listing>
+    {{ range .Site.RegularPages }}
+      <li>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div class=date>
+          {{ index $.Site.Data.months_ru (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ partial "footer.html" . }}

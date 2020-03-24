@@ -1,0 +1,17 @@
+{{ partial "header.html" . }}
+
+<section id=content>
+  <h1>{{ if .Params.heading }} {{ .Params.heading }} {{ else }} {{ .Title }} {{ end }}</h1>
+
+  {{ if .Params.date }}
+    <div id=sub-header>
+      {{ index $.Site.Data.months_ru (printf "%d" .Date.Month) | humanize }} {{ .Date.Year }}
+    </div>
+  {{ end }}
+
+  <div class="entry-content">
+    {{ .Content }}
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
