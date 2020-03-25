@@ -2,7 +2,8 @@ baseurl = "https://www.example.com/"
 title = "Radio Quotes"
 author = "Maksim Z."
 canonifyurls = true
-languagecode = "ru"
+
+DefaultContentLanguage = "ru"
 
 pygmentsstyle       = "bw"
 pygmentscodefences  = true
