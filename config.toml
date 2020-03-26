@@ -1,4 +1,4 @@
-baseurl = "https://www.example.com/"
+baseurl = "http://radioquotes.xyz/"
 title = "Radio Quotes"
 author = "Maksim Z."
 canonifyurls = true
