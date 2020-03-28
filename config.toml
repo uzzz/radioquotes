@@ -5,6 +5,8 @@ canonifyurls = true
 
 DefaultContentLanguage = "ru"
 
+googleAnalytics = "UA-162014054-1"
+
 pygmentsstyle       = "bw"
 pygmentscodefences  = true
 
