@@ -13,6 +13,10 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v1
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.62.2'
+
       - name: Buld static
-        uses: docker://jojomi/hugo
-        run: hugo -D
+        run: hugo --minify
