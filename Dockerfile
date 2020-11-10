@@ -3,7 +3,7 @@ FROM klakegg/hugo:0.78.0-alpine AS build
 WORKDIR /radioquotes
 COPY . /radioquotes
 
-RUN hugo -D
+RUN hugo --minify
 
 FROM nginx:1.19.4-alpine
 
